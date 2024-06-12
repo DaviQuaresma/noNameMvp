@@ -1,5 +1,6 @@
-function homePage() {
-    const homePage = document.getElementById('homePage');
+export default function homePage() {
+    const app = document.getElementById('app');
+    app.innerHTML = '';
     
     const main = document.createElement("section");
     main.className = 'container-xxl d-flex flex-column align-items-center justify-content-center min-vh-100';
@@ -8,6 +9,7 @@ function homePage() {
     const button = document.createElement("button");
     button.innerText = 'ENTRAR';
     button.className = 'btn btn-primary mt-3';
+    button.id = 'initButton'
 
     const divTitle = document.createElement("div");
     divTitle.className = 'text-center mb-4';
@@ -34,6 +36,7 @@ function homePage() {
     const loginInput = document.createElement("input");
     loginInput.placeholder = 'LOGIN :';
     loginInput.className = 'form-control mb-3';
+    loginInput.id = 'loginField'
 
     const passwordLabel = document.createElement("label");
     passwordLabel.innerText = '';
@@ -45,10 +48,12 @@ function homePage() {
     const passwordInput = document.createElement("input");
     passwordInput.placeholder = 'SENHA :';
     passwordInput.className = 'form-control mb-3';
+    passwordInput.id = 'passwordField'
 
     const resetPassword = document.createElement("a");
     resetPassword.innerText = 'RECUPERAR SENHA';
     resetPassword.className = 'd-block mb-3';
+    resetPassword.id = 'reset'
     resetPassword.style.marginRight = '8rem'
     resetPassword.href = '#'
     resetPassword.style.textDecoration = 'none'
@@ -71,7 +76,5 @@ function homePage() {
     
     main.appendChild(divTitle);
     main.appendChild(divFields);
-    homePage.appendChild(main);
+    app.appendChild(main);
 }
-
-homePage();
