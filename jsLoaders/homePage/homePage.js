@@ -26,9 +26,9 @@ export default function homePage() {
     const formGroup = document.createElement("div");
     formGroup.className = 'row justify-content-center';
 
-    const loginLabel = document.createElement("label");
-    loginLabel.innerText = '';
-    loginLabel.className = 'form-label col-12 text-center';
+    // const loginLabel = document.createElement("label");
+    // loginLabel.innerText = '';
+    // loginLabel.className = 'form-label col-12 text-center';
 
     const loginInputDiv = document.createElement("div");
     loginInputDiv.className = 'col-md-6 col-lg-7';
@@ -38,9 +38,9 @@ export default function homePage() {
     loginInput.className = 'form-control mb-3';
     loginInput.id = 'loginField'
 
-    const passwordLabel = document.createElement("label");
-    passwordLabel.innerText = '';
-    passwordLabel.className = 'form-label col-12 text-center';
+    // const passwordLabel = document.createElement("label");
+    // passwordLabel.innerText = '';
+    // passwordLabel.className = 'form-label col-12 text-center';
 
     const passwordInputDiv = document.createElement("div");
     passwordInputDiv.className = 'col-md-6 col-lg-7';
@@ -65,9 +65,9 @@ export default function homePage() {
     loginInputDiv.appendChild(loginInput);
     passwordInputDiv.appendChild(passwordInput);
 
-    formGroup.appendChild(loginLabel);
+    // formGroup.appendChild(loginLabel);
     formGroup.appendChild(loginInputDiv);
-    formGroup.appendChild(passwordLabel);
+    // formGroup.appendChild(passwordLabel);
     formGroup.appendChild(passwordInputDiv);
 
     divFields.appendChild(formGroup);
